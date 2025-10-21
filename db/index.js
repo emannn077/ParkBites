@@ -11,7 +11,7 @@ const connect = async () => {
     console.log("Connection error", error.message)
   }
 }
-
+//to connect
 connect()
 const db = mongoose.connection
 module.exports = db
