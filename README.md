@@ -7,7 +7,7 @@
 [Shooq Github]("https://github.com/shooqbinzaiman")
 
 ***
-### ***Description*** 
+### ***Description***
 #### SEB-X ParkBites is your theme park food buddy !🎢🎠
 ####  A website where the user can pick there favorite food truck and then add food in the cart. You can also add special request if you something spicy 🌶️. Add to cart, submit and then enjoy your Bites. NOM NOM !!
 
@@ -33,7 +33,7 @@
 
 ***
 ### ***ER Diagram:***
-![ERD](<Theme.jpg>)
+![ERD](<ERD.png>)
 
 ***
 ### ***Future Updates***
