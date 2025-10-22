@@ -1,4 +1,4 @@
-const { Order } = require("./OrderController")
+const { Order } = require("../models/Order").default
 
 const CreateOrder = async (req, res) => {
   try {
