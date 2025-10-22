@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(logger("dev"))
 
-app.get("/", (req, res) => {
+app.get("/api/order", (req, res) => {
   res.send("ParkBites Api is running")
 })
 
@@ -32,5 +32,5 @@ app.use("/orders", orderRouter)
 const { error } = require("console")
 
 app.listen(PORT, () => {
-  console.log(`Express server is running on port`, PORT, `...`)
+  console.log(`Express server is running on port ${PORT}...`)
 })
