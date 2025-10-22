@@ -7,7 +7,7 @@ router.get("/", orderCtrl.getOrders)
 //post new order
 router.post("/", orderCtrl.CreateOrder)
 
-//update
+//updatee
 router.put("/:id", orderCtrl.updateOrder)
 
 //delete order
