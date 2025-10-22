@@ -1,6 +1,6 @@
-import { Schema } from "mongoose"
+const mongoose = require("mongoose")
 
-const orderSchema = new Schema(
+const orderSchema = new mongoose.Schema(
   {
     customerName: { type: String, required: true },
     truckName: { type: String, required: true },
@@ -16,5 +16,5 @@ const orderSchema = new Schema(
   },
   { timestamps: true }
 )
-
-export default orderSchema
+const Order = mongoose.model("Order", orderSchema)
+module.exports = { Order }

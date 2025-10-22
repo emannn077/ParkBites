@@ -1,9 +1,9 @@
-const { Order } = require("../models/Order").default
+const { Order } = require("../models/Order")
 
 const CreateOrder = async (req, res) => {
   try {
     const order = await Order.create(req.body)
-    res.status(200).send(order)
+    res.status(200).send(orders)
   } catch (error) {
     res.status(500).send(error.message)
   }
@@ -12,7 +12,7 @@ const CreateOrder = async (req, res) => {
 const getOrders = async (req, res) => {
   try {
     const orders = await Order.find({})
-    res.staus(200).send(orders)
+    res.status(200).send(orders)
   } catch (error) {
     res.status(500).send(error.message)
   }
