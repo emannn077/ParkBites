@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(logger("dev"))
 
-app.get("/", (req, res) => {
+app.get("/api/order", (req, res) => {
   res.send("ParkBites Api is running")
 })
 
