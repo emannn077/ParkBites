@@ -1,6 +1,6 @@
-const { Schema } = require('mongoose')
+const mongoose = require('mongoose')
 
-const cartSchema = new Schema({
+const cartSchema = new mongoose.Schema({
  customerName:{ type: String, required: true },
  items: [
   {
@@ -11,6 +11,6 @@ const cartSchema = new Schema({
  ],
  total: {type: Number, default: 0 }
 })
-
-module.exports = cartSchema
+const Cart = mongoose.model("Cart", cartSchema)
+module.exports = {Cart}
 
